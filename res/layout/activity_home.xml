@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jamsession.HomeActivity"
+    tools:ignore="MergeRootFrame" 
+    android:background="#a2d8fd">
+
+      <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:background="#a2d8fd"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp" >
+
+          <Button
+              android:id="@+id/center"
+              android:layout_width="96dp"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:onClick="clickCenter"
+              android:text="Record" />
+
+          <Button
+              android:id="@+id/logout"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/center"
+              android:layout_centerHorizontal="true"
+              android:onClick="logout"
+              android:text="Logout" />
+
+          <Button
+              android:id="@+id/right"
+              android:layout_width="96dp"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/logout"
+              android:layout_toRightOf="@+id/center"
+              android:onClick="clickRight"
+              android:text="Friends" />
+
+          <Button
+              android:id="@+id/left"
+              android:layout_width="96dp"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/logout"
+              android:layout_toLeftOf="@+id/center"
+              android:onClick="clickLeft"
+              android:text="Updates" />
+
+          <TextView
+              android:id="@+id/homelabel"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:text="Jamsession"
+              android:textAppearance="?android:attr/textAppearanceLarge" />
+
+      </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jamsession.FriendsList"
+    tools:ignore="MergeRootFrame" >
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" 
+    android:background="#a2d8fd">
+
+    <TextView
+        android:id="@+id/FriendsListLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Friends"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/update"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:onClick="updateFriendsList"
+        android:layout_toRightOf="@+id/FriendsListLabel"
+        android:text="Update" />
+
+    <ListView
+        android:id="@+id/friendsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/FriendsListLabel"
+        android:layout_below="@+id/update"
+        android:layout_marginTop="57dp" >
+    </ListView>
+
+</RelativeLayout>
+    </FrameLayout>
+

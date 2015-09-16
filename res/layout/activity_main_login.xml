@@ -1,0 +1,132 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jamsession.MainActivity"
+    tools:ignore="MergeRootFrame" 
+    android:background="#a2d8fd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+      
+		<!--  Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+              <TextView
+                  android:id="@+id/CreateAccountLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentTop="true"
+                  android:layout_centerHorizontal="true"
+                  android:text="Create Account"
+                  android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+        </RelativeLayout>
+        
+          <TextView
+            android:id="@+id/error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f55"
+            android:text="" />
+          
+           <!--  Email -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+             <EditText
+                 android:id="@+id/email"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true"
+                 android:layout_centerHorizontal="true"
+                 android:ems="10"
+                 android:hint="Enter Email"
+                 android:inputType="textEmailAddress" />
+            
+        </RelativeLayout>
+        
+        <!--  Name -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Enter Name"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+            
+        </RelativeLayout>
+        
+        
+        <!--  Password1 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+             <EditText
+                 android:id="@+id/password1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true"
+                 android:ems="10"
+                 android:layout_centerHorizontal="true"
+                 android:hint="Enter Password"
+                 android:inputType="textPassword" />
+            
+        </RelativeLayout>
+        
+        <!--  Password 2 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+             <EditText
+                 android:id="@+id/password2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true"
+                 android:ems="10"
+                 android:layout_centerHorizontal="true"
+                 android:hint="Retype Password"
+                 android:inputType="textPassword" />
+            
+        </RelativeLayout>
+ <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="addUser"
+            android:text="Submit" />
+        <Button 
+            android:id="@+id/backToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/submit"
+            android:layout_centerHorizontal="true"
+            android:onClick="back"
+            android:text="Back" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
